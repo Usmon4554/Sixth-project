@@ -1,0 +1,22 @@
+// Global SCSS-files imports
+
+@import './vars';
+@import './reset';
+@import './global';
+@import './mixins';
+
+//Fonts
+@import './fonts';
+
+//Header
+@import './header';
+
+//Index
+@import './index';
+
+
+//Footer
+@import './footer';
+
+//Modal
+@import './modal';

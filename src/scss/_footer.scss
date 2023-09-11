@@ -1,0 +1,159 @@
+// Footer
+
+.footer{
+    padding: 50px 20px 0px 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.footer__inner{
+    margin: 0 auto;
+    width: 1150px;
+
+    @include _1199-block{
+        width: 920px;
+    }
+
+    @include _991-block{
+        width: 720px;
+    }
+
+    @include _767-block{
+        width: 520px;
+    }
+
+    @include _575-block{
+        width: 95%;
+    }
+}
+
+.footer__title{
+    font-size: $miniTitleSize;
+
+    @include _991-block{
+        font-size: 34px;
+    }
+}
+
+.footer__block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include _767-block{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.f1{
+    @include _991-block{
+        width: 300px;
+    }
+} 
+
+.block-1st__description{
+    color: #00000080;
+}
+
+.block-1st__inner-description{
+    margin-top: 20px;
+}
+
+.block-2nd__sc-icons{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer__icon{
+    width: 30px;
+    height: 30px;
+    transition: 0.2s all;
+}
+
+.footer__icon:hover{
+    margin: -2.5px;
+    width: 35px;
+    height: 35px;
+}
+
+.footer__map{
+    margin-top: 30px;
+    border-radius: 18px;
+    width: 100%;
+    height: 45vh;
+
+    @include _767-block{
+        height: 220px;
+        border-radius: 10px;
+    }
+}
+
+.footer iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    filter: invert(90%);
+
+    @include _767-block{
+        filter: invert(0%);
+        border-radius: 10px;
+    }
+}
+
+.footer__links{
+    padding: 40px 0 30px 0;
+    display: flex;
+    gap: 100px;
+
+    @include _767-block{
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footer__link{
+    position: relative;
+    font-size: $linkSize;
+    width: auto;
+    line-height: 1.3;
+    display: flex;
+    overflow: hidden;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.footer__link::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 250px;
+    height: 1.6px;
+    background: #000;
+    display: block;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer__link:first-child:after{
+    width: 85px;
+}
+
+.footer__link:hover:after{
+    transform: scale(1);
+}
+
+.footer__link:hover{
+    opacity: 1;
+}
+
+.br{
+    display: none;
+    @include _575-block{
+        display: block;
+    }
+}
