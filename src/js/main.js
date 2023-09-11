@@ -104,3 +104,11 @@ modalSearch.addEventListener('click', function(){
     searchContainerBlock.style.transform = 'scale(1)'
   }, 300);
 });
+
+// const vvv = document.querySelector('.container7__upper-mini-box');
+// value_ = 0.5
+
+// vvv.onclick = function() {
+//   showBtn1.style.transform = 'rotate(' + value_ + 'turn)'
+//   value_ = value_ + 0.5
+// };

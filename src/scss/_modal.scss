@@ -181,6 +181,10 @@
     border-radius: 6px;
     transition: .2s all;
     background: none;
+
+    @include _575-block{
+        right: 8px;
+    }
 }
 
 .search-container__x:hover{
@@ -202,7 +206,7 @@
     }
 
     @include _575-block{
-        width: 80%;
+        width: 90%;
         padding: 0 40px 0 15px;
         transform: translateX(10px);
     }
@@ -219,6 +223,16 @@
     }
 
     @include _575-block{
-        left: -25px;
+        left: -20px;
+        width: 20px;
     }
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+
+    @include _575-block{
+            width: 95%;
+        }
 }
